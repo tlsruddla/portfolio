@@ -1,6 +1,17 @@
 # portfolio
 my_portfolio
 
+
+🛠️ 프로젝트 0: C/C++ 활용한 미니 게임
+설명:
+
+이중 게임 시스템(개구리 도로 횡단 게임, 좀비 디펜스)
+
+객체지향 구조 설계, 타이머/인터럽트 기반 이벤트 처리
+
+기술 스택: C/C++
+
+
 🛠️ 프로젝트 1: Raspberry Pi 기반 채팅 시스템
 설명:
 
@@ -10,9 +21,6 @@ Framebuffer UI 및 터치 입력 처리 구현
 
 기술 스택: C, POSIX Thread, Linux framebuffer
 
-QR 코드 삽입:
-🔗 [깃허브 저장소 링크 삽입] → QR 코드 생성하여 오른쪽 상단에 삽입
-📌 예: https://github.com/your-id/chat-system-embedded
 
 🌡️ 프로젝트 2: STM32 자동 팬 제어 시스템
 설명:
@@ -23,8 +31,6 @@ DHT11 센서 기반 온습도 측정
 
 기술 스택: C, STM32CubeIDE, HAL, UART, WiFi
 
-QR 코드 삽입:
-🔗 https://github.com/your-id/stm32-fan-controller
 
 🤖 프로젝트 3: ROS 기반 터틀봇 벌레 퇴치기
 설명:
@@ -35,6 +41,4 @@ QR 코드 삽입:
 
 기술 스택: ROS, Python, OpenCV, Jetson Nano
 
-QR 코드 삽입:
-🔗 https://github.com/your-id/insect-killer-bot
 
