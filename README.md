@@ -12,6 +12,7 @@ my_portfolio
 기술 스택: C/C++
 
 
+
 🛠️ 프로젝트 1: Raspberry Pi 기반 채팅 시스템
 설명:
 
@@ -22,7 +23,8 @@ Framebuffer UI 및 터치 입력 처리 구현
 기술 스택: C, POSIX Thread, Linux framebuffer
 
 
-🌡️ 프로젝트 2: STM32 자동 팬 제어 시스템
+
+🛠️ 프로젝트 2: STM32 자동 팬 제어 시스템
 설명:
 
 DHT11 센서 기반 온습도 측정
@@ -32,7 +34,8 @@ DHT11 센서 기반 온습도 측정
 기술 스택: C, STM32CubeIDE, HAL, UART, WiFi
 
 
-🤖 프로젝트 3: ROS 기반 터틀봇 벌레 퇴치기
+
+🛠️ 프로젝트 3: ROS 기반 터틀봇 벌레 퇴치기
 설명:
 
 카메라 및 딥러닝 기반 벌레 감지
