@@ -1,0 +1,21 @@
+version: "3.3"
+services:
+  ros:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sleep infinity
+    network_mode: host
+    volumes:
+      - .:/workspace
+      - $HOME/.Xauthority:/root/.Xauthority:rw
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    privileged: true
+    stdin_open: true
+    environment:
+      - DISPLAY=${DISPLAY}
+      - ROS_MASTER_URI=http://10.10.141.133:11311
+      - ROS_HOSTNAME=10.10.141.133
+      - TURTLEBOT3_MODEL=burger
+    ipc: host
+    tty: true
