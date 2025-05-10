@@ -1,0 +1,34 @@
+#CC:=arm-linux-gcc
+CC:=gcc
+
+TARGET_SRV=iot_server
+OBJECT_SRV=$(TARGET_SRV).o 
+
+TARGET_CLN=iot_client
+OBJECT_CLN=$(TARGET_CLN).o 
+
+TARGET_CLN_SENSOR=iot_client_sensor
+OBJECT_CLN_SENSOR=$(TARGET_CLN_SENSOR).o 
+
+TARGET_CLN_DEVICE=iot_client_device
+OBJECT_CLN_DEVICE=$(TARGET_CLN_DEVICE).o
+
+LDFLAGS=-D_REENTRANT -pthread
+LDFLAGS_SQL=-D_REENTRANT -pthread -lmysqlclient
+
+all :	$(TARGET_SRV) $(TARGET_CLN) $(TARGET_CLN_SENSOR) $(TARGET_CLN_DEVICE)
+
+$(TARGET_SRV):$(OBJECT_SRV)
+	$(CC) -o $@ $(OBJECT_SRV) $(LDFLAGS)
+$(TARGET_CLN):$(OBJECT_CLN)
+	$(CC) -o $@ $(OBJECT_CLN) $(LDFLAGS)
+$(TARGET_CLN_SENSOR):$(OBJECT_CLN_SENSOR)
+	$(CC) -o $@ $(OBJECT_CLN_SENSOR) $(LDFLAGS_SQL)
+$(TARGET_CLN_DEVICE):$(OBJECT_CLN_DEVICE)
+	$(CC) -o $@ $(OBJECT_CLN_DEVICE) $(LDFLAGS_SQL)
+%.o:%.c
+	$(CC) -c -o $@ $<
+clean:
+	rm -f *.o 
+clean_all:
+	rm -f *.o $(TARGET_SRV) $(TARGET_CLN) $(TARGET_CLN_SQL)
